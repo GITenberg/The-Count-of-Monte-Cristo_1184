@@ -4,6 +4,11 @@ covers:
   image_path: 1184/1184-h/images/cover.jpg
   rights: Public domain in the USA.
   rights_url: http://creativecommons.org/about/pdm
+- attribution: Sara Nauman, 2015
+  cover_type: original
+  image_path: cover.jpg
+  rights: Attribution-NonCommercial 4.0 International (CC BY-NC 4.0)
+  rights_url: https://creativecommons.org/licenses/by-nc/4.0/
 creator:
   author:
     agent_name: Dumas, Alexandre
