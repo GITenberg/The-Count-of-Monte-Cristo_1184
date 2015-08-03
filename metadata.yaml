@@ -1,4 +1,5 @@
 _repo: The-Count-of-Monte-Cristo_1184
+_version: 0.0.1
 covers:
 - cover_type: archival
   image_path: 1184/1184-h/images/cover.jpg
@@ -29,9 +30,10 @@ gutenberg_type: Text
 identifiers:
   gutenberg: '1184'
 language: en
-publisher: Project Gutenberg
-rights: Public domain in the USA.
-rights_url: http://creativecommons.org/about/pdm
+publication_date: '2015-08-01'
+publisher: Recovering the Classics
+rights: CC BY-NC
+rights_url: http://creativecommons.org/licenses/by-nc/4.0/
 subjects:
 - '!lcsh: Revenge -- Fiction'
 - '!lcsh: Dantès, Edmond (Fictitious character) -- Fiction'
