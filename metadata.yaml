@@ -13,8 +13,8 @@ creator:
   author:
     agent_name: Dumas, Alexandre
     aliases:
-    - Dumas père, Alexandre
     - Dumas, Alexandre, pere
+    - Dumas père, Alexandre
     - Dumas, Alexander
     birthdate: 1802
     deathdate: 1870
@@ -22,8 +22,8 @@ creator:
     url: http://www.gutenberg.org/2009/agents/492
     wikipedia: http://en.wikipedia.org/wiki/Alexandre_Dumas,_père
 gutenberg_bookshelf:
-- Adventure
 - Movie Books
+- Adventure
 gutenberg_issued: '1998-01-01'
 gutenberg_type: Text
 identifiers:
@@ -33,13 +33,13 @@ publisher: Project Gutenberg
 rights: Public domain in the USA.
 rights_url: http://creativecommons.org/about/pdm
 subjects:
-- '!lcsh:Revenge -- Fiction'
-- '!lcc:PQ'
-- '!lcsh:Pirates -- Fiction'
-- '!lcsh:France -- History -- 19th century -- Fiction'
-- '!lcsh:Prisoners -- Fiction'
-- '!lcsh:Historical fiction'
-- '!lcsh:Dantès, Edmond (Fictitious character) -- Fiction'
-- '!lcsh:Adventure stories'
+- '!lcsh: Revenge -- Fiction'
+- '!lcsh: Dantès, Edmond (Fictitious character) -- Fiction'
+- '!lcsh: Prisoners -- Fiction'
+- '!lcsh: France -- History -- 19th century -- Fiction'
+- '!lcc: PQ'
+- '!lcsh: Adventure stories'
+- '!lcsh: Pirates -- Fiction'
+- '!lcsh: Historical fiction'
 title: The Count of Monte Cristo, Illustrated
 url: http://www.gutenberg.org/ebooks/1184
