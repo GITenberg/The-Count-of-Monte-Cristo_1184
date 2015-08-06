@@ -1,10 +1,6 @@
 _repo: The-Count-of-Monte-Cristo_1184
 _version: 0.0.1
 covers:
-- cover_type: archival
-  image_path: 1184/1184-h/images/cover.jpg
-  rights: Public domain in the USA.
-  rights_url: http://creativecommons.org/about/pdm
 - attribution: Sara Nauman, 2015
   cover_type: original
   image_path: cover.jpg
