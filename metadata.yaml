@@ -1,5 +1,5 @@
 _repo: The-Count-of-Monte-Cristo_1184
-_version: 0.0.2
+_version: 0.1.0
 covers:
 - attribution: Sara Nauman, 2015
   cover_type: original
@@ -39,5 +39,6 @@ subjects:
 - '!lcsh: Adventure stories'
 - '!lcsh: Pirates -- Fiction'
 - '!lcsh: Historical fiction'
+- GITenberg
 title: The Count of Monte Cristo, Illustrated
 url: http://www.gutenberg.org/ebooks/1184
