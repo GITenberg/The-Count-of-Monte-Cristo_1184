@@ -21,13 +21,15 @@ script:
 - /usr/bin/python asciidoctor-htmlbook/gitberg-machine/machine.py -o . -m metadata.yaml book.html
 - xsltproc -stringparam external.assets.list " " ./HTMLBook/htmlbook-xsl/epub.xsl book.html
 - cp ./HTMLBook/stylesheets/epub/epub.css OEBPS
-- cp cover.jpg OEBPS/cover.jpg
+- if [ -e cover.jpg ]; then cp cover.jpg OEBPS/cover.jpg; fi
 # look for first images directory and one found, copy over to ./OEBPS
 - find . -name images -type d | head -n 1 | xargs -I {} mv {} ./OEBPS/
 - zip -rX book.epub mimetype
 - zip -rX book.epub OEBPS/ META-INF/
 - if test -d "OEBPS/images/"; then zip -rX book.epub OEBPS/images/ ;fi
 - mv book.epub The-Count-of-Monte-Cristo-Illustrated.epub
+- ebook-convert The-Count-of-Monte-Cristo-Illustrated.epub The-Count-of-Monte-Cristo-Illustrated.mobi
+- xvfb-run ebook-convert The-Count-of-Monte-Cristo-Illustrated.epub The-Count-of-Monte-Cristo-Illustrated.pdf
 branches:
   only:
   - master
@@ -43,10 +45,15 @@ deploy:
   provider: releases
   api_key:
     secure: QQuyWjIDoiWCTOjlg7KTQYxlxN7/qKGt0PwaPWODANBXMQ9c4TRi6AVxUHSLSTXpERdIIPkeCcvgxvt4/dOchL+/lBWWvOx4+NRQo086xfrzZp5XtkRRsr5vODN1FBy+4riMcb888zpe1p2bOd2njsaw0+xmZmxpt8StLhTUFopsgouN6dswkxWfPGGYvtgIcXn8vC+uzdxwLE8nGNhGjvxtKJaYzQ8pT+AGfamON5rPe1bVA9unpe/ZxgfV+3wdDYCV0AooqM42Vt6w2hZYl7dkMVuz+sAhQDlQ3GSQ5L1tE21n+HpS0etFaPq1o7u849UUmFEgwuvvGsMD8g0j1x6nrWajFDYzgI4oxxeY1qkHV5COPnbhOElud1caD3xA2u7NQc7nf+vLUGq+4VgIt/iGde9O2IMNzGotyYNfH//yITzDqr4V6V2ZXKrN12s0OFsiiM14bdZ4GBujQfhhHd+3kV2VRsZDM7w/PJLLAG5yrk6CYvazHVYzVGPjDSJiIqaMGTdHSErgPyn1mMvXjuCqQJlSQv0BvMUjRDphEJIYgqywxlvYIYGmrE2B1l6xftToEBGE39ZlASN7/uzLSuEQvgcKgNsU0ZYvaDeFbaLz3AYdFJks/lplGBGiQJ7B4Tk3DsDQ0Lj3qfE5Q1UyRXDkfbTVP/8OUgGBSjSMfO4=
-  file: The-Count-of-Monte-Cristo-Illustrated.epub
+  file:
+    - The-Count-of-Monte-Cristo-Illustrated.epub
+    - The-Count-of-Monte-Cristo-Illustrated.mobi
+    - The-Count-of-Monte-Cristo-Illustrated.pdf
   "on":
     repo: GITenberg/The-Count-of-Monte-Cristo_1184
 addons:
   apt:
     packages:
     - xsltproc
+    - xvfb
+    - calibre
