@@ -1,5 +1,5 @@
 _repo: The-Count-of-Monte-Cristo_1184
-_version: 0.2.1
+_version: 0.2.2
 covers:
 - attribution: Sara Nauman, 2015
   cover_type: original
@@ -18,6 +18,8 @@ creator:
     gutenberg_agent_id: '492'
     url: http://www.gutenberg.org/2009/agents/492
     wikipedia: http://en.wikipedia.org/wiki/Alexandre_Dumas,_père
+edition_identifiers:
+  edition_id: http://www.gutenberg.org/ebooks/1184#The-Count-of-Monte-Cristo
 gutenberg_bookshelf:
 - Movie Books
 - Adventure
